@@ -6,13 +6,13 @@ import Countries from './components/Countries';
 function App() {
   const [filterCountry, setFilterCountry] = useState('')
   const [countries, setCountries] = useState([])
+  const api_key = process.env.REACT_APP_API_KEY
 
   useEffect(() => {
     countriesService
       .getAll()
       .then(initialCountries => {
         setCountries(initialCountries)
- 
       })
   }, [])
 
@@ -24,7 +24,7 @@ function App() {
   return (
     <div>
       <Filter change={handleFilterChange} />
-      <Countries countries={countries} filterCountry={filterCountry}/>
+      <Countries countries={countries} filterCountry={filterCountry} api_key={api_key} />
     </div>
   );
 }

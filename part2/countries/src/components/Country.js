@@ -1,8 +1,12 @@
 const Country = ({ name }) => {
 
+    const ta = () => {
+        console.log(name);
+    }
+
         return (
             <div>
-                {name} <button>show</button>
+                {name} <button onClick={() => ta()}>show</button>
             </div>
         )
     
