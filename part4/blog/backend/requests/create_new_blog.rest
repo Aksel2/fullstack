@@ -1,9 +1,10 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pa2siLCJpZCI6IjY0ZmYxNzkzYTcwYjJjYTVmZDdhYzM2NiIsImlhdCI6MTY5NDY4MzYxMX0.SJtWioHqQYXDiSGZZPWOH_QwtrKE0WN4Zf2dQz7el1M
 
 {
-    "title": "Fifth blog",
-    "author": "Mike",
-    "url": "1",
-    "likes": 0
+    "title": "Fitgh Blog",
+    "author": "Hola Amg",
+    "url": "https://www.tere.com",
+    "likes": 44
 }
